@@ -92,5 +92,7 @@ Follow the instructions in the MPACT_manual.pdf file to learn how to use MPACT p
 
 If you use this program for your publication, please cite:
 
+## Contact
 
+To report bugs, to ask for help and to give any feedback, please contact Arthur Gruber (argruber@usp.br) or Igor Custódio dos Santos (XXX).
 
