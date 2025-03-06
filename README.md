@@ -16,17 +16,17 @@ In this case, you must only install the Docker program (https://www.docker.com/)
 
 MPACT uses the following third-party programs to perform the sequence and structural comparisons:
 
-* Needle
-* MAFFT
-* IQ-TREE
-* Foldseed
-* TM-align
+* Needle (https://emboss.sourceforge.net/apps/release/6.0/emboss/apps/needle.html)
+* MAFFT (https://mafft.cbrc.jp/alignment/software/)
+* IQ-TREE (https://github.com/iqtree/)
+* Foldseed (https://github.com/steineggerlab/foldseek)
+* TM-align (https://zhanggroup.org/TM-align/)
 
 ## Usage
 ### Docker file
 In this repository, two docker images are available. The first image (mpact.tar.gz) contains all third-party programs and was generated on a computer with an Intel® Core™ i7-5500U 2.40 GHz processor and a Linux operating system (Ubuntu 24.04.1 LTS). Due to Foldseek limitations, this image is only compatible with machines with an Intel® Core™ i7-5500U 2.40 GHz processor or higher. The second image (mpact_no_fs.tar.gz) does not contain the Foldseek program and therefore does not have the processor limitations.
 
-To use both images, first you need to decompress the file with gzip program:
+To use both images, first you need to decompress the file with the gzip program:
 
 ```
 gzip -d mpact.tar.gz
@@ -65,29 +65,23 @@ python3 mpact.py -i input.fasta -s input_dir -o output_dir
 -l (lines) <yes|no>:         Use cells dividing lines on heatmap (default = no).
 
 -n | names <id|org|all>:     Names for labels.                       
-			                          This parameter will work only if the sequence headers have the NCBI standard (e.g.: ">YP_003289293.1 RNA-dependent RNA polymerase 
-                                [Drosophila totivirus 1]). Otherwise, sequence headers appended with “_” in whitespace will be used as labels. For the name showed 
+			        This parameter will work only if the sequence headers have the NCBI standard (e.g.: ">YP_003289293.1 RNA-dependent RNA polymerase 
+                                [Drosophila totivirus 1]). Otherwise, sequence headers appended with “_” in whitespace will be used as labels. For the name shown 
                                 in the example: 
                                 
-                                id: YP_003289293.1
-									              org: Drosophila totivirus 1
-									              all: YP_003289293.1 Drosophila totivirus 1
+                                id: YP_003289293.
+				org: Drosophila totivirus 1
+				all: YP_003289293.1 Drosophila totivirus 1
 
 -o | output <name>:          Output directory.
 
 -p | protocols <als3>:       Protocols to be used in the execution. By default, all protocols will be used.
 
 -q | IQ-TREE <parameters>:   IQTREE parameters. Only "-m", "-bb" e "-nt" are accepted. 
-				                        e.g.: -iqtree "-m Q.pfam+F+R6 -bb 1000 -nt 20”
+			        e.g.: -iqtree "-m Q.pfam+F+R6 -bb 1000 -nt 20”
 
 -v | version:                Program version.
 
-
-
-
-
-
--p | protocols <als3>:       Protocols to be used in the execution. By default, all protocols will be used.
 ```
 
 ## Tutorial
