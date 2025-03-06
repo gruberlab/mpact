@@ -48,11 +48,14 @@ docker run -v <your_path>:/mnt mpact -i /mnt/input.fasta -s /mnt/input_dir -o /m
 python3 mpact.py -i input.fasta -s input_dir -o output_dir
 ```
 ### Mandatory parameters
+```
 -i | input <file name>:      Input fasta file containing biological sequences. 
 
--s | structure <directory>:  Directory containing 3D protein structure files in PDB format. 
+-s | structure <directory>:  Directory containing 3D protein structure files in PDB format.
+```
 
 ### Optional parameters
+```
 -conf <file>:                Configuration file.
 
 -c | color <parameter>:      Color palette for graphs (default = RdBu).
@@ -84,7 +87,8 @@ python3 mpact.py -i input.fasta -s input_dir -o output_dir
 
 
 
--p | protocols <als3>:       Protocols to be used in the execution. By default, all protocols will be used. 
+-p | protocols <als3>:       Protocols to be used in the execution. By default, all protocols will be used.
+```
 
 ## Tutorial
 
