@@ -4,7 +4,7 @@ MPACT, the Multimetric PAirwise Comparison Tool, is an integrated toolbox for pa
 
 ## Instalation
 
-MPACT does not need to be installed. The user should only download one of the Docker files or the mpact.py script.
+MPACT does not need to be installed. The user should only download one of the Docker files or the MAPCT python script.
 
 ## Requirements
 
