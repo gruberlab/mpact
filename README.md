@@ -19,7 +19,7 @@ MPACT uses the following third-party programs to perform the sequence and struct
 * Needle (https://emboss.sourceforge.net/apps/release/6.0/emboss/apps/needle.html)
 * MAFFT (https://mafft.cbrc.jp/alignment/software/)
 * IQ-TREE (https://github.com/iqtree/)
-* Foldseed (https://github.com/steineggerlab/foldseek)
+* Foldseeek (https://github.com/steineggerlab/foldseek)
 * TM-align (https://zhanggroup.org/TM-align/)
 
 ## Usage
