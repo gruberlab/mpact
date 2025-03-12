@@ -5,7 +5,7 @@ MPACT, the Multimetric PAirwise Comparison Tool, is an integrated toolbox for pa
 ## Instalation
 
 We provide docker files for an easy installation. Alternatively, 
-the user can download the MPACT program and perform a manual instalkation 
+the user can download the MPACT program and perform a manual installation 
 of the required third-party applications. 
 
 ## Requirements
