@@ -94,7 +94,9 @@ Follow the instructions in the MPACT_manual.pdf file to learn how to use MPACT p
 
 If you use this program for your publication, please cite:
 
+MPACT program (developed by Igor Custódio dos Santos and Arthur Gruber, University of São Paulo, Brazil, manuscript in preparation).
+
 ## Contact
 
-To report bugs, to ask for help and to give any feedback, please contact Arthur Gruber (argruber@usp.br) or Igor Custódio dos Santos (XXX).
+To report bugs, to ask for help and to give any feedback, please contact Arthur Gruber (argruber@usp.br) or Igor Custódio dos Santos (igor223tgec@usp.br).
 
