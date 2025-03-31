@@ -31,13 +31,13 @@ Two MPACT docker images are available on the Docker repository. These images com
 To use them, the user only needs to install Docker (https://docs.docker.com/) and download one of them. To get the complete image, use the following command line:
 s
 ```
-docker push lilianesantana/mpact:tagname
+docker pull lilianesantana/mpact:latest
 ```
 
 To obtain the image without the Foldseek program, use the command below:
 
 ```
-docker push lilianesantana/mpact_no_fs:tagname
+docker pull lilianesantana/mpact_no_fs:latest
 ```
 
 To run the docker image, you need to set your local path in the run command:
