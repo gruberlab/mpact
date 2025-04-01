@@ -24,6 +24,8 @@ MPACT uses the following third-party programs to perform the sequence and struct
 * Foldseek (https://github.com/steineggerlab/foldseek)
 * TM-align (https://zhanggroup.org/TM-align/)
 
+The 3Di_matrix.txt file contains the matrix required for the needle analysis. Thus, this file must be located in the same directory as the Python script.
+
 ## Usage
 ### Docker file
 Two MPACT docker images are available on the Docker repository. These images come pre-installed with the third-party programs mentioned in the previous section, eliminating the need for manual installation. The first image, named mpact, includes all third-party programs and was created on a system with an Intel® Core™ i7-5500U 2.40 GHz processor running Linux (Ubuntu 24.04.1 LTS). Due to Foldseek limitations, this image is only compatible with machines equipped with an Intel® Core™ i7-5500U 2.40 GHz processor or higher. The second image, mpact_no_fs, does not include the Foldseek program and, therefore, is not subject to the processor restrictions mentioned above.
