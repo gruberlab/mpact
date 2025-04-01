@@ -26,17 +26,18 @@ MPACT uses the following third-party programs to perform the sequence and struct
 
 ## Usage
 ### Docker file
-In this repository, two docker images are available. The first image (mpact.tar.gz) contains all third-party programs and was generated on a computer with an Intel® Core™ i7-5500U 2.40 GHz processor and a Linux operating system (Ubuntu 24.04.1 LTS). Due to Foldseek limitations, this image is only compatible with machines with an Intel® Core™ i7-5500U 2.40 GHz processor or higher. The second image (mpact_no_fs.tar.gz) does not contain the Foldseek program and therefore does not have the processor limitations.
+Two MPACT docker images are available on the Docker repository. These images come pre-installed with the third-party programs mentioned in the previous section, eliminating the need for manual installation. The first image, named mpact, includes all third-party programs and was created on a system with an Intel® Core™ i7-5500U 2.40 GHz processor running Linux (Ubuntu 24.04.1 LTS). Due to Foldseek limitations, this image is only compatible with machines equipped with an Intel® Core™ i7-5500U 2.40 GHz processor or higher. The second image, mpact_no_fs, does not include the Foldseek program and, therefore, is not subject to the processor restrictions mentioned above.
 
-To use both images, first you need to decompress the file with the gzip program:
+To use them, the user only needs to install Docker (https://docs.docker.com/) and download one of them. To get the complete image, use the following command line:
+s
+```
+docker pull lilianesantana/mpact:latest
+```
+
+To obtain the image without the Foldseek program, use the command below:
 
 ```
-gzip -d mpact.tar.gz
-```
-Then you must upload the docker image to your local repository:
-
-```
-docker load < mpact.tar
+docker pull lilianesantana/mpact_no_fs:latest
 ```
 
 To run the docker image, you need to set your local path in the run command:
