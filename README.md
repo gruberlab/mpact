@@ -89,7 +89,7 @@ python3 mpact.py -i input.fasta -s input_dir -o output_dir
 
 ## Tutorial
 
-Follow the instructions in the MPACT_manual.pdf file to learn how to use MPACT program and interpret the results.
+Follow the instructions in the MPACT - Manual and Tutorial.pdf file to learn how to use MPACT program and interpret the results.
 
 ## Reference
 
