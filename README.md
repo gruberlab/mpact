@@ -45,7 +45,7 @@ docker pull lilianesantana/mpact_no_fs:latest
 To run the docker image, you need to set your local path in the run command:
 
 ```
-docker run -v <your_path>:/mnt mpact -i /mnt/input.fasta -s /mnt/input_dir -o /mnt/output_dir
+docker run -v <your_path>:/mnt lilianesantana/mpact -i /mnt/input.fasta -s /mnt/input_dir -o /mnt/output_dir
 ```
 ### Python script
 
